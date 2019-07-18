@@ -18,7 +18,6 @@ function printReceipt(totalPrice, itemFoods, halfPriceFood, firstPreference, sec
     totalPrice += foodPrice;
     receipt += `${value.name} x ${value.count} = ${parseInt(foodPrice)}元
 `
-
     if(value.isHalfPriceFood){
       halfPriceFood.push(value.name);
       firstPreference += value.price / 2;
